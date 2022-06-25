@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+}
+
+
+/*
+dark list
+
+*************************************************************************
+*/
+.dark-list {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    margin-left: -250px;
+    z-index: 999999999999999;
+}
+
+.dark-list ul {
+    list-style-type: none;
+
+    padding: 0;
+}
+
+.dark-list ul li {
+
+    transform: translateY(200px);
+    padding: 20px;
+    cursor: pointer;
+    transition: transform 1s, opacity 1s ease-in-out;
+    opacity: 0;
+}
+
+.dark-list ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+
+    font-size: 18px;
+
+}
+
+.dark-list ul li a:hover {
+    color: crimson;
+}
+
+.social i {
+    color: white;
+    padding: 10px;
+    transition: .5s;
+}
+
+.social i:hover {
+    color: crimson;
+
+}
+
+
+/*
+white list
+****************************************************************************
+*/
+
+.white-list {
+    width: 60px;
+    height: 100%;
+    position: fixed;
+    background-color: white;
+    padding: 10px;
+    margin-left: 0px;
+    z-index: 9999999999999999999999;
+}
+
+.logo img {
+    width: 40px;
+
+}
+
+
+.bars i {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.close {
+    display: none;
+}
+
+.close i {
+    font-size: 30px;
+    color: gray;
+    cursor: pointer;
+}
+
+.icons-container {
+    height: 15%;
+}
+
+
+
+
+/*
+input
+*************************************************************************
+*/
+input {
+    border: 0;
+    border-bottom: 1px solid white;
+    color: rgb(167, 164, 164);
+    font-size: 20px;
+    width: 100%;
+    background-color: transparent;
+
+    line-height: 40px;
+}
+
+input::placeholder {
+    font-size: 20px;
+    text-align: center;
+}
+
+.invalid {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(233, 116, 140);
+    display: none;
+}
+
+/*
+colom
+*************************************************************************
+*/
+
+
+
+
+.film img {
+    z-index: 0;
+}
+
+.film:hover .layer {
+    top: 0;
+}
+
+.layer {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .8);
+    position: absolute;
+    left: 0;
+
+    top: 100%;
+
+    padding: 10px;
+    z-index: 1;
+    transition: all 1s;
+}
