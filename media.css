@@ -1,0 +1,12 @@
+@media screen and (max-width: 786px){
+    .display-container{
+    margin-left: 90px;
+    
+    
+    }
+    .contact-container{
+        width: 90%;
+        margin-left: 50px;
+    }
+    
+    }
